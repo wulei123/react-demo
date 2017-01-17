@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>react-demo</title>
+	<script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+	<script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+</head>
+<body>
+	<div id="example031"></div>
+	<script type="text/babel">
+		function Welcome(props) {
+			return (<h1>Welcome {props.name}</h1>)
+		}
+		function Clock (props) {
+			return (
+					<div>
+					<h1>{props.date.toLocaleTimeString()}</h1>
+					<Welcome name="wulei" />
+					</div>
+				)
+		}
+		function App () {
+			return (
+				<div><Welcome name="you"/></div>
+				)
+		}
+		//反斜杠是必须的
+		function tick () {
+			const element = <Clock date={new Date()}/>
+			ReactDOM.render(
+			element
+			,document.getElementById('example031')
+			)
+		}
+		setInterval(tick,1000)
+		
+/*		function formatDate(date) {
+  return date.toLocaleDateString();
+}
+
+function Avatar(props) {
+  return (
+    <img className="Avatar"
+         src={props.user.avatarUrl}
+         alt={props.user.name} />
+  );
+}
+
+function UserInfo(props) {
+  return (
+    <div className="UserInfo">
+      <Avatar user={props.user} />
+      <div className="UserInfo-name">
+        {props.user.name}
+      </div>
+    </div>
+  );
+}
+
+function Comment(props) {
+  return (
+    <div className="Comment">
+      <UserInfo user={props.author} />
+      <div className="Comment-text">
+        {props.text}
+      </div>
+      <div className="Comment-date">
+        {formatDate(props.date)}
+      </div>
+    </div>
+  );
+}
+
+const comment = {
+  date: new Date(),
+  text: 'I hope you enjoy learning React!',
+  author: {
+    name: 'Hello Kitty',
+    avatarUrl: 'http://placekitten.com/g/64/64'
+  }
+};
+ReactDOM.render(
+  <Comment
+    date={comment.date}
+    text={comment.text}
+    author={comment.author} />,
+  document.getElementById('example031')
+);*/
+	</script>
+</body>
+</html>
