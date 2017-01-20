@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>react-demo</title>
+	<script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+	<script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+</head>
+<body>
+	<div id="example06"></div>
+	<script type="text/babel">
+		class Lists extends React.Component{
+			constructor(props){
+				super(props)
+				const num = [1,2,3,4,5,6]
+				this.state={
+					items:num.map((number)=><li>{number}</li>)
+				}
+			}
+			componentDidMount(){
+				console.log(this.state.items)
+			}
+			render(){
+				return (<div>{this.state.items}</div>)
+			}
+		}
+		ReactDOM.render(<Lists />,document.getElementById('example06'))
+	</script>
+</body>
+</html>
