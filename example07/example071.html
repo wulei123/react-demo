@@ -10,6 +10,7 @@
 <body>
 	<div id="example071"></div>
 	<script type="text/babel">
+	//如果在一个function中先返回了null 后面的内容也就不再生效了 整个组件的返回为空
 		function MailBox(props){
 			const length = props.messages.length
 			let messages = props.messages.map((msg)=><h2>{msg}</h2>)
