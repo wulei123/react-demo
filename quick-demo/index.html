@@ -72,7 +72,6 @@
 				this.props.onUserInput(this.filterTextInput.value,this.inStockOnlyInput.checked)
 			}
 			render(){
-				console.log(this.filterTextInput)
 				return (
 					<form>
 						<input type="text" placeholder="Search..." value={this.props.filterText} ref={(input)=>this.filterTextInput = input} onChange={this.handleChange}/>
