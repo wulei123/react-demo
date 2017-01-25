@@ -6,13 +6,19 @@ import MyImage from './js/my-image'
 export default class Main extends Component{
   render(){
     return (
-      <View style={{flex:1,backgroundColor:'powderblue'}}>
+      <View style={{flex:1,flexDirection:'column',backgroundColor:'powderblue',alignItems:'center'}}>
       <View style={{flex:4}}>
-        <MyImage src={'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'} style={{width: 193,height: 110}} />
+        <MyImage src={'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'} style={{width: 300,height: 170}} />
         <HelloWorld />
       </View>
-          <View style={{flex:1,backgroundColor:'skyblue'}}></View>
-      <View style={{flex:2,backgroundColor:'steelblue'}}></View>
+          <View style={{flex:1,flexDirection:'row',backgroundColor:'skyblue'}}>
+            <View style={{flex:1,backgroundColor:'red'}}></View>
+            <View style={{flex:1,backgroundColor:'green'}}></View>
+          </View>
+        <View style={{flex:2,backgroundColor:'steelblue',flexDirection:'row'}}>
+            <View style={{height:200,width:200,backgroundColor:'green'}}></View>
+            <View style={{height:100,width:100,backgroundColor:'red'}}></View>
+        </View>
       </View>
       )
   }
