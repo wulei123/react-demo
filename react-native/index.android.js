@@ -1,7 +1,8 @@
 import React,{Component} from 'react'
-import {View,AppRegistry,} from 'react-native'
+import {View,AppRegistry,TextInput} from 'react-native'
 import HelloWorld from './js/hello-world'
 import MyImage from './js/my-image'
+import MyTextInput from './js/my-input'
 
 export default class Main extends Component{
   render(){
@@ -10,6 +11,7 @@ export default class Main extends Component{
       <View style={{flex:4}}>
         <MyImage src={'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'} style={{width: 300,height: 170}} />
         <HelloWorld />
+        <MyTextInput />
       </View>
           <View style={{flex:1,flexDirection:'row',backgroundColor:'skyblue'}}>
             <View style={{flex:1,backgroundColor:'red'}}></View>
