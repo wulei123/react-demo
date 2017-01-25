@@ -10,8 +10,8 @@ export default class Main extends Component{
       <View style={{flex:1,flexDirection:'column',backgroundColor:'powderblue',alignItems:'center'}}>
       <View style={{flex:4}}>
         <MyImage src={'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'} style={{width: 300,height: 170}} />
-        <HelloWorld />
         <MyTextInput />
+        <HelloWorld />
       </View>
           <View style={{flex:1,flexDirection:'row',backgroundColor:'skyblue'}}>
             <View style={{flex:1,backgroundColor:'red'}}></View>
