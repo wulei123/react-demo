@@ -1,20 +1,18 @@
 import React,{Component} from 'react'
-import {View,Text,AppRegistry,StyleSheet} from 'react-native'
+import {View,AppRegistry,} from 'react-native'
+import HelloWorld from './js/hello-world'
+import MyImage from './js/my-image'
 
-export default class HelloWorld extends Component{
+
+export default class Main extends Component{
   render(){
     return (
       <View>
-        <Text style={styles.helloworld}>HelloWorld</Text>
+      <MyImage src={'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'} style={{width: 193,height: 110}} />
+      <HelloWorld />
       </View>
       )
   }
 }
 
-const styles = StyleSheet.create({
-  helloworld:{
-    textAlign:'center',
-    fontSize : 40
-  }
-})
-AppRegistry.registerComponent('HelloWorld',()=>HelloWorld)
+AppRegistry.registerComponent('HelloWorld',()=>Main)
