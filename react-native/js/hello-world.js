@@ -12,6 +12,7 @@ export default class HelloWorld extends Component{
 		return (
 			<View>
 				<Text style={styles.hello}>{text}</Text>
+				<Text style={styles.red}>{text}</Text>
 			</View>
 			)
 	}
@@ -21,5 +22,10 @@ const styles = StyleSheet.create({
 	hello:{
 		textAlign:'center',
 		fontSize:40
+	},
+	red:{
+		textAlign:'center',
+		fontSize:40,
+		color:'red'
 	}
 })
