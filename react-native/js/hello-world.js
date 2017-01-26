@@ -8,7 +8,7 @@ export default class HelloWorld extends Component{
 	  setInterval(()=>{this.setState({showText:!this.state.showText})},1000)
 	}
 	render(){
-		let text = this.state.showText ? 'Hello World !!!' : ''
+		let text = this.state.showText ? 'Hello World !!!' : ' '
 		return (
 			<View>
 				<Text style={styles.hello}>{text}</Text>
