@@ -10,9 +10,20 @@ export default class NameList extends Component{
 	  this.state = {
 	  	dataSource :ds.cloneWithRows([
 	  	'john','joel','james','jimmy','Dave'
-	  	])
+	  	]),
+	  	movies:[]
 	  };
 	}
+	getMoviesFromApiAsync() {
+     fetch('https://facebook.github.io/react-native/movies.json')
+      .then((response) => response)
+      .then((responseJson) => {
+       this.setState({movies:responseJson.movies}) ;
+       })
+      .catch((error) => {
+        console.error(error);
+      });
+  }
 	render(){
 		return (
 			<View>
