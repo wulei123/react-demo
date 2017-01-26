@@ -3,6 +3,7 @@ import {ScrollView,Text,View,AppRegistry,TextInput} from 'react-native'
 import HelloWorld from './js/hello-world'
 import MyImage from './js/my-image'
 import MyTextInput from './js/my-input'
+import NameList from './js/name-list'
 
 export default class Main extends Component{
   render(){
@@ -26,6 +27,7 @@ export default class Main extends Component{
           <Text style={{fontSize:40}}>ScrollView</Text>
           <Text style={{fontSize:40}}>ScrollView</Text>
           <Text style={{fontSize:40}}>ScrollView</Text>
+          <NameList />
         </ScrollView>
       // </View>
       )
