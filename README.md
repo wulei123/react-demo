@@ -1,6 +1,10 @@
 # react-demo
 react-demo for learn
 
->example01 
+> react-demo
 
-happy new year !!!
+react demo is a demo made by react and compnonts
+
+> react-native 
+
+react native demo is a demo made by react native
