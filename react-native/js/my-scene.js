@@ -5,7 +5,7 @@ export default class MyScene extends Component {
   render() {
     return (
       <View>
-        <Text>Current Scene: {this.props.title}</Text>
+        <Text style={{fontSize:40}}>Current Scene: {this.props.title}</Text>
 
         <TouchableHighlight onPress={this.props.onForward}>
           <Text>Tap me to load the next scene</Text>
