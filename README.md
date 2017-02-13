@@ -1,5 +1,5 @@
 # react-demo
-react-demo for learn
+react-demo
 
 > react-demo
 
